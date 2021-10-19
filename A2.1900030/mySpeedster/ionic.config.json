@@ -1,0 +1,7 @@
+{
+  "name": "mySpeedster",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
