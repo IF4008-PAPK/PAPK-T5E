@@ -7,7 +7,7 @@ import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
 })
 
 export class CrudService {
-  // Cofig database
+  
   private dbInstance: SQLiteObject;
   readonly db_name: string = "remotestack.db";
   readonly db_table: string = "userTable";
@@ -15,12 +15,12 @@ export class CrudService {
 
   constructor(
     private platform: Platform,
-    private sqlite: SQLite
-  ) {
+    private sqlite: SQLite    
+  ) { 
     this.databaseConn();
   }
 
-    // Create SQLite database
+    // Create SQLite database 
     databaseConn() {
         this.platform.ready().then(() => {
           this.sqlite.create({
@@ -30,7 +30,7 @@ export class CrudService {
               this.dbInstance = sqLite;
               sqLite.executeSql(`
                   CREATE TABLE IF NOT EXISTS ${this.db_table} (
-                    user_id INTEGER PRIMARY KEY,
+                    user_id INTEGER PRIMARY KEY, 
                     name varchar(255),
                     email varchar(255)
                   )`, [])
@@ -40,14 +40,14 @@ export class CrudService {
                 .catch((error) => alert(JSON.stringify(error)));
             })
             .catch((error) => alert(JSON.stringify(error)));
-        });
+        });   
     }
 
-    // Proses Crud
+    // Crud
     public addItem(n, e) {
       // validation
-      if (!n.length || !e.length) {
-        alert('Masukan Nama & Email Anda');
+      if (!n.length || !e.length) { 
+        alert('Provide both email & name');
         return;
       }
       this.dbInstance.executeSql(`
@@ -77,10 +77,10 @@ export class CrudService {
     // Get user
     getUser(id): Promise<any> {
       return this.dbInstance.executeSql(`SELECT * FROM ${this.db_table} WHERE user_id = ?`, [id])
-      .then((res) => {
+      .then((res) => { 
         return {
           user_id: res.rows.item(0).user_id,
-          name: res.rows.item(0).name,
+          name: res.rows.item(0).name,  
           email: res.rows.item(0).email
         }
       });
@@ -90,7 +90,7 @@ export class CrudService {
     updateUser(id, name, email) {
       let data = [name, email];
       return this.dbInstance.executeSql(`UPDATE ${this.db_table} SET name = ?, email = ? WHERE user_id = ${id}`, data)
-    }
+    }  
 
     // Delete
     deleteUser(user) {
@@ -105,5 +105,4 @@ export class CrudService {
         });
     }
 
-  }
-  
+}
