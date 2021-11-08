@@ -3,12 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'create',
     pathMatch: 'full'
   },
   {
@@ -16,7 +12,7 @@ const routes: Routes = [
     loadChildren: () => import('./create/create.module').then( m => m.CreatePageModule)
   },
   {
-    path: 'edit',
+    path: 'edit/:id',
     loadChildren: () => import('./edit/edit.module').then( m => m.EditPageModule)
   },
 ];
@@ -27,4 +23,5 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
