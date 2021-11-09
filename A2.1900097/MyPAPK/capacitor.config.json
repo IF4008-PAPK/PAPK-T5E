@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "MyPAPK",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
