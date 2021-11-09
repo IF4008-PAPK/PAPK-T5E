@@ -1,0 +1,3 @@
+Untuk pengetesan saya menggunakan `Interactive Mobile App Testing` dari [browserstack] (app-live.browserstack.com)
+
+[![Build Android APP with Ionic and Cordova | Live Testing with BrowserStack AppLive](https://res.cloudinary.com/marcomontalbano/image/upload/v1636467953/video_to_markdown/images/youtube--SpdPomvLAlg-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/SpdPomvLAlg "Build Android APP with Ionic and Cordova | Live Testing with BrowserStack AppLive")
