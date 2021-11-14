@@ -1,0 +1,1 @@
+[![mypapk crud with SQlite](https://res.cloudinary.com/marcomontalbano/image/upload/v1636623675/video_to_markdown/images/youtube--OT309f0iMFA-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/OT309f0iMFA "mypapk crud with SQlite")
