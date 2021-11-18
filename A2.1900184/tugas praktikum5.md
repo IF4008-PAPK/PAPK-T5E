@@ -1,0 +1,1 @@
+[![MyPapk3-sqlite-crud](https://res.cloudinary.com/marcomontalbano/image/upload/v1637214853/video_to_markdown/images/youtube--KDQRtjzFBXw-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/KDQRtjzFBXw "MyPapk3-sqlite-crud")
