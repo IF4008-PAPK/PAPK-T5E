@@ -29,6 +29,7 @@
     "@ionic-native/core": "^5.36.0",
     "@ionic-native/sqlite": "^5.36.0",
     "@ionic/angular": "^5.5.2",
+    "cordova-browser": "6.0.0",
     "cordova-res": "^0.15.3",
     "cordova-sqlite-storage": "^6.0.0",
     "rxjs": "~6.6.0",
@@ -90,7 +91,8 @@
       "cordova-sqlite-storage": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "browser"
     ]
   }
 }
