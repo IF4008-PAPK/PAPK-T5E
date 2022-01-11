@@ -4,7 +4,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,macos,python
 ### macOS ###
 # General
-webservice-ionic/front-ionic/node_modules/
+A2.1900115/webservice-ionic/front-ionic/node_modules/
 *.angular
 
 .DS_Store
