@@ -24,21 +24,24 @@ export class FormInputPage implements OnInit {
     public api: AuthServiceService,
     public LoadingController: LoadingController,
     public AlertController: AlertController,
-    private formBuilder: FormBuilder
-  ) { 
-    this.FormSimpanData=this.formBuilder.group({
+    private formBulder: FormBuilder,
+  ) {
+    this.FormSimpanData=this.formBulder.group({
       nama_barang: ['', Validators.required],
       qty: ['', Validators.required],
-      harga: ['', Validators.required],
+      harga:['', Validators.required],
     })
   }
 
+
   ngOnInit() {}
+
+  // fungsi untuk simpan data.
 
   simpan(){
     this.api.Post_Data('Input_Barang', this.FormSimpanData.value).subscribe(
       (res)=>{
-        this.navCtrl.navigateBack("/home");
+        this.navCtrl.navigateBack('/home');
       },
       (err)=>{
         console.log(err);

@@ -7,12 +7,12 @@
 <ion-content>
   <div class="ion-padding">
     <h4 text-center></h4>
-    <ion-button 
+    <ion-button
       color="primary"
       expand="block"
       routerLink="/form-input"
       routerDirection="forward"
-      >Tambah Data
+      >tambah data
     </ion-button>
     <ion-grid>
       <ion-row>
@@ -26,9 +26,9 @@
                 <th>Aksi</th>
               </tr>
             </thead>
-            <tbody *ngif="DataBarang">
-              <tr *ngFor="left data of Barang">
-                <td valign="top">{{data.nama.barang}}</td>
+            <tbody *ngIf="DataBarang">
+              <tr *ngFor="let data of Data_Barang">
+                <td valign="top">{{data.nama_barang}}</td>
                 <td valign="top">{{data.qty}}</td>
                 <td valign="top">{{data.harga}}</td>
                 <td valign="top">

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -8,16 +8,15 @@ import { FormInputPageRoutingModule } from './form-input-routing.module';
 
 import { FormInputPage } from './form-input.page';
 
-
 import { ReactiveFormsModule } from '@angular/forms';
 import { from } from 'rxjs';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:"",
-    component: FormInputPage
-  }
+    path: '',
+    component: FormInputPage,
+  },
 ];
 
 @NgModule({
@@ -26,8 +25,8 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     ReactiveFormsModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [FormInputPage]
+  declarations: [FormInputPage],
 })
 export class FormInputPageModule {}

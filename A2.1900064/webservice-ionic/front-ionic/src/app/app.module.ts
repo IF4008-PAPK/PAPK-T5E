@@ -3,8 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+// add plugin status bar
+import { StatusBar } from '@ionic-native/status-bar/ngx'
 
-import { StatusBar } from '@ionic-native/status-bar/ngx';
+// add FromModule and HttpClientModule
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,11 +18,10 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
-  
+  // add FromModule and HttpClientModule
   FormsModule,
   HttpClientModule
   ],
-
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

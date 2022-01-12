@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { HttpClient, HttpHeaders} from '@angular/common/http';
+import { Observable, } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
 const httpOptions = {
-headers: new HttpHeaders({'Content-Type': 'Aplication/json'})
+  headers: new HttpHeaders({'Content-Type': 'application/json'})
 };
-const apiURL = "http://localhost/webservice-ionic";
-
+const apiUrl = "http://localhost/webservice-ionic";
 
 @Injectable({
   providedIn: 'root'
@@ -15,10 +14,14 @@ const apiURL = "http://localhost/webservice-ionic";
 export class AuthServiceService {
 
   constructor(private http: HttpClient) { }
-  Get_Data(type): Observable<any>{
-    return this.http.get(`${apiURL}/${type}`);
+
+// Dua Fungsi untuk Get data dan post data
+  Get_Data(type): Observable<any> {
+    return this.http.get(`${apiUrl}/${type}`);
   }
+//credentials fungsi yang akan dikirim ke web service
+//httpOption opsi header
   Post_Data(type,credentials): Observable<any>{
-    return this.http.post(`${apiURL}/${type}`,credentials,httpOptions);
+    return this.http.post(`${apiUrl}/${type}`,credentials,httpOptions);
   }
 }

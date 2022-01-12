@@ -12,12 +12,12 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'form-edit',
-    loadChildren: () => import('./form-edit/form-edit.module').then( m => m.FormEditPageModule)
-  },
-  {
     path: 'form-input',
     loadChildren: () => import('./form-input/form-input.module').then( m => m.FormInputPageModule)
+  },
+  {
+    path: 'form-edit/:id',
+    loadChildren: () => import('./form-edit/form-edit.module').then( m => m.FormEditPageModule)
   },
 ];
 
