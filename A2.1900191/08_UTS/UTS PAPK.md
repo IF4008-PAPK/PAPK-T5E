@@ -1,0 +1,1 @@
+[![UTS PAPK](https://res.cloudinary.com/marcomontalbano/image/upload/v1642077573/video_to_markdown/images/google-drive--1N7eYnniWRXToE4CS1Tm0nUtxuMbMnvg3-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/1N7eYnniWRXToE4CS1Tm0nUtxuMbMnvg3/view?usp=sharing "UTS PAPK")
