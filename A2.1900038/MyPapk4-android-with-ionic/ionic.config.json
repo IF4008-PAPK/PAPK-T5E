@@ -1,0 +1,10 @@
+{
+  "name": "MyPapk4-android-with-ionic",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}
