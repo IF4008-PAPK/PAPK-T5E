@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-button slot="start">
+      <ion-back-button 
+      style="color: white;"
+      defaultHref="/home"></ion-back-button>
+    </ion-button>
+    <ion-title style="color: white;">Tambah Data</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+          <form [formGroup]="FormSimpanData" (ngSubmit)="simpan()">
+              <ion-item>
+                  <ion-label color="warning" position="stacked">Tanggal</ion-label>
+                  <ion-input type="text" formControlName="nama_barang"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label color="warning" position="stacked">Nama Pelanggan</ion-label>
+                <ion-input type="text" formControlName="qty"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label color="warning" position="stacked">No HP</ion-label>
+                <ion-input type="text" formControlName="harga"></ion-input>
+              </ion-item>
+                <ion-button size="default"  type="submit" color="success" [disabled]="!FormSimpanData.valid" >Simpan</ion-button>
+          </form>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+</ion-content>

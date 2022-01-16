@@ -1,0 +1,24 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10pt;
+}
+tr:nth-of-type(odd) {
+  background: rgb(255, 255, 255);
+  color: black;
+}
+th {
+  background: #fbb909;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+td,
+th {
+  padding: 6px;
+  border: 1px solid #fbb909;
+  text-align: center;
+}
+h4 {
+  background-color: chocolate;
+  text-align: center;
+}
