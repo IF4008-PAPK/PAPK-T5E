@@ -1,1 +1,1 @@
-[![UTS PAPK](https://res.cloudinary.com/marcomontalbano/image/upload/v1637402257/video_to_markdown/images/google-drive--1nvVqCeIEBtm4CdxNj_cA9Py06pkyOEgM-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/1nvVqCeIEBtm4CdxNj_cA9Py06pkyOEgM/view?usp=drivesdk "UTS PAPK")
+[![UAS](https://res.cloudinary.com/marcomontalbano/image/upload/v1642344305/video_to_markdown/images/youtube--eD5WFDIgN6g-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/eD5WFDIgN6g "UAS")
