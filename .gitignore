@@ -2,10 +2,11 @@
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,macos,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,macos,python
-
-
 ### macOS ###
 # General
+A2.1900115/webservice-ionic/front-ionic/node_modules/
+*.angular
+
 .DS_Store
 .AppleDouble
 .LSOverride
