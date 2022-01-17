@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Form Edit Data</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+              <form [formGroup]="FormEditData" (ngSubmit)="simpan()">
+                  <ion-item>                                     
+                      <ion-label color="primary" position="stacked">Nama Barang</ion-label>
+                      <ion-input type="hidden" formControlName="id_barang" ></ion-input>   
+                      <ion-input type="text" formControlName="nama_barang" ></ion-input>                 
+                  </ion-item>  
+                  <ion-item>                                     
+                    <ion-label color="primary" position="stacked">Qty</ion-label>
+                    <ion-input type="text" formControlName="qty" ></ion-input>                 
+                  </ion-item>  
+                  <ion-item>                                     
+                    <ion-label color="primary" position="stacked">Harga</ion-label>
+                    <ion-input type="text" formControlName="harga" ></ion-input>                 
+                  </ion-item>        
+                    <ion-button expand="block"  type="submit" color="primary" [disabled]="!FormEditData.valid" >Simpan</ion-button>
+              </form>
+          </ion-col>
+        </ion-row>
+        </ion-grid>
+</ion-content>
