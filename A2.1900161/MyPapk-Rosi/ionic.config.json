@@ -1,0 +1,7 @@
+{
+  "name": "MyPapk-Rosi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

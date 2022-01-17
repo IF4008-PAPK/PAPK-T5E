@@ -1,0 +1,10 @@
+{
+  "name": "MyPapk-Rosi",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

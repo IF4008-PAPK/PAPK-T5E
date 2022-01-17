@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>MyPapk 8</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <h4 text-center></h4>
+    <ion-button
+      color="primary"
+      expand="block"
+      routerLink="/form-input"
+      routerDirection="forward"
+      >tambah data
+    </ion-button>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <table>
+            <thead>
+              <tr>
+                <th>Nama Barang</th>
+                <th>Qty</th>
+                <th>Harga</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody *ngIf="DataBarang">
+              <tr *ngFor="let data of Data_Barang">
+                <td valign="top">{{data.nama_barang}}</td>
+                <td valign="top">{{data.qty}}</td>
+                <td valign="top">{{data.harga}}</td>
+                <td valign="top">
+                  <ion-button
+                    color="danger"
+                    size="small"
+                    (click)="presentAlertConfirm(data.id_barang)"
+                    ><ion-icon name="trash"></ion-icon>
+                  </ion-button>
+                  <ion-button
+                    color="secondary"
+                    size="small"
+                    routerLink="/form-edit/{{data.id_barang}}"
+                    routerDirection="forward"
+                    ><ion-icon name="create"></ion-icon>
+                  </ion-button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
