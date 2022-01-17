@@ -1,0 +1,1 @@
+[![CRUD PHP with IONIC Framework and MySQL | UAS PAPK5](https://res.cloudinary.com/marcomontalbano/image/upload/v1642418467/video_to_markdown/images/youtube--8-37kZGJq94-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/8-37kZGJq94 "CRUD PHP with IONIC Framework and MySQL | UAS PAPK5")
